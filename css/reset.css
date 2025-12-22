@@ -1,0 +1,39 @@
+
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; 
+}
+
+
+ul, ol, li {
+  list-style: none;
+}
+
+
+
+input, button, textarea, select {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+
+article, aside,  figure, footer, header, main,  nav, section {
+  display: block;
+}
