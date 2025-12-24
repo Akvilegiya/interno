@@ -37,3 +37,12 @@ h1, h2, h3, h4, h5, h6, p, blockquote {
 article, aside,  figure, footer, header, main,  nav, section {
   display: block;
 }
+
+
+a {
+
+  text-decoration: none; 
+  color: inherit;       
+
+
+}
