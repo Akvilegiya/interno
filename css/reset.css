@@ -42,7 +42,9 @@ article, aside,  figure, footer, header, main,  nav, section {
 a {
 
   text-decoration: none; 
-  color: inherit;       
+  color: inherit;  
+  padding: 0;    
+  margin: 0;    
 
 
 }
