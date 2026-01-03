@@ -77,9 +77,17 @@ body {
   color: #cda274;
 }
 
-.dream-container {
+.dream-section {
   background-image: url("../fotos/fon.png");
   height: 800px;
+  background-repeat: no-repeat;
+  margin-left: 80px;
+  border-radius: 0 0 0 290px;
+  width: 1440px;
+  height: 831px;
+}
+
+.dream-container {
   margin-bottom: 100px;
 }
 
