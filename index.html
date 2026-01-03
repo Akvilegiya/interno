@@ -17,14 +17,16 @@
 <body>
     <header class="header">
         <div class="container header-container">
-            <a href="#" class="header-logo">Interno</a>
-            <nav class="header-nav">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Services</a>
-                <a href="#">Pages</a>
-                <a href="#">Contact Us</a>
-            </nav>
+            <div class="header-all">
+                <a href="#" class="header-logo">Interno</a>
+                <nav class="header-nav">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Services</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -99,12 +101,12 @@
                 <div class="obertka">
                     <ul class="about-ul">
                         <li class="about-li">
-                            <div class="box">
+                            <div class="about-father">
                                 <img class="about-img" src="./fotos/lisa.png" alt="lisa" />
-                            </div>
-                            <div class="about-profile">
-                                <h2 class="about-h2">Lisa Clairton</h2>
-                                <p class="about-p">New York, USA</p>
+                                <div class="about-profile">
+                                    <h2 class="about-h2">Lisa Clairton</h2>
+                                    <p class="about-p">New York, USA</p>
+                                </div>
                             </div>
 
                             <p class="about-pa">
@@ -113,31 +115,34 @@
                             </p>
                         </li>
                         <li class="about-li">
-                            <div class="about-box">
+                            <div class="about-father">
                                 <img class="about-img" src="./fotos/david.png" alt="david">
-                            </div>
-                            <div class="about-profile">
-                                <h2 class="about-h2">David Knight</h2>
-                                <p class="about-p">Sydney, Australia</p>
+
+                                <div class="about-profile">
+                                    <h2 class="about-h2">David Knight</h2>
+                                    <p class="about-p">Sydney, Australia</p>
+                                </div>
                             </div>
                             <p class="about-pa">The team exceeded our expectations and emerged as leaders of our
                                 project’s.</p>
 
+
+                        </li>
+                        <li class="about-li">
+                            <div class="about-father">
+                                <img class="about-img" src="./fotos/clair.png" alt="lisa">
+
+                                <div class="about-profile">
+                                    <h2 class="about-h2">Lisa Clairton</h2>
+                                    <p class="about-p">Paris, France</p>
+                                </div>
+                            </div>
+                            <p class="about-pa">They balanced the architectural vision and the project realities
+                                beautifully.</p>
+
+                        </li>
+                    </ul>
                 </div>
-                </li>
-                <li class="about-li">
-                    <div class="about-box">
-                        <img class="about-img" src="./fotos/clair.png" alt="lisa">
-                    </div>
-                    <div class="about-profileee">
-                        <h2 class="about-h2">Lisa Clairton</h2>
-                        <p class="about-p">Paris, France</p>
-                    </div>
-                    <p class="about-pa">They balanced the architectural vision and the project realities
-                        beautifully.</p>
-                </li>
-                </ul>
-            </div>
             </div>
         </section>
         <section class="section gallary">
@@ -157,157 +162,252 @@
                     getting started with us never been easier.</p>
                 <ul class="foto-ul">
                     <li class="foto-li">
-                        <img class="foto-img" id="foto-img" src="./fotos/sofa.webp" alt="sofa">
+                        <img class="foto-sofa" id="foto-img" src="./fotos/sofa.webp" alt="sofa">
                         <div class="foto-ele">
                             <h4 class="foto-h4">Winery Dry Creek Building</h4>
                             <p class="foto-pe">Art Modern</p>
-                            <a class="foto-a" href=""></a>
+                            <a class="foto-a" href=""><img src="./fotos/ste.png" alt=""></a>
                         </div>
                     </li>
                     <li class="foto-li">
-                        <img class="foto-img" src="./fotos/table.webp" alt="table">
+                        <img class="foto-table" src="./fotos/table.webp" alt="table">
                         <div class="foto-ele">
                             <h4 class="foto-h4">Creative Workplace Design</h4>
                             <p class="foto-pe">Minimalist</p>
-                            <a class="foto-a" href=""></a>
+                            <a class="foto-a" href=""><img src="./fotos/ste.png" alt=""></a>
                         </div>
                     </li>
                     <li class="foto-li">
-                        <img class="foto-img" id="foto-img" src="./fotos/bad.webp" alt="bad">
+                        <img class="foto-bad" id="foto-bad" src="./fotos/bad.webp" alt="bad">
                         <div class="foto-ele">
                             <h4 class="foto-h4">Bedroom Interior Pot Work</h4>
                             <p class="foto-pe">Modern</p>
-                            <a class="foto-a" href=""></a>
+                            <a class="foto-a" href=""><img src="./fotos/ste.png" alt=""></a>
                         </div>
                     </li>
                     <li class="foto-li">
-                        <img class="foto-img" src="./fotos/wind.webp" alt="wind">
+                        <img class="foto-wind" id="foto-wind" src="./fotos/wind.webp" alt="wind">
                         <div class="foto-ele">
                             <h4 class="foto-h4">Light Ambience Sepia Design</h4>
                             <p class="foto-pe">Scandinavian</p>
-                            <a class="foto-a" href=""></a>
+                            <a class="foto-a" href=""><img src="./fotos/ste.png" alt=""></a>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
-        <secttion class="secttion years-section">
+        <section class="section years-section">
             <div class="container years-container">
-                <!--  4 декор фото -->
-                <p class="years-p">Years Of Experiance</p>
-                <p class="years-p">Success Project</p>
-                <p class="years-p">Active Project</p>
-                <p class="years-p">Happy Customers</p>
+                <div class="stat-item" id="one">
+                    <h5 class="years-h5">12</h5>
+                    <p id="years1" class="years-p">Years Of Experiance</p>
+                </div>
+                <img class="vertik" src="./fotos/vertik.png" alt="">
+
+                <div class="stat-item">
+                    <h5 class="years-h5">5K</h5>
+                    <p id="years2" class="years-p">Success Project</p>
+                </div>
+                <img class="vertik" src="./fotos/vertik.png" alt="">
+
+                <div class="stat-item">
+                    <h5 class="years-h5">1K</h5>
+                    <p id="years3" class="years-p">Active Project</p>
+                </div>
+                <img class="vertik" src="./fotos/vertik.png" alt="">
+
+                <div class="stat-item" id="last">
+                    <h5 class="years-h5">4K</h5>
+                    <p id="years4" class="years-p">Happy Customers</p>
+                </div>
             </div>
-            </secttion6>
-            <section class="section exth-section">
-                <div class="container exth-container">
-                    <h5 class="exth-h5">Recent Blogs</h5>
-                    <p class="exth-p">Get updates about our latest trends and techniques used in <br>interior design
-                        project works.</p>
-                    <ul class="exth-ul">
-                        <li class="exth-li">
-                            <img class="exth-img" src="./fotos/sitaps.webp" alt="sitaps">
-                            <p class="exth-p">Kitchen Design</p>
-                            <h2 class="exth-h2">Residential Interior Designer In New York, USA</h2>
-                            <p class="exth-p">November 23, 2021</p>
-                            <button class="exth-button" type="button"></button>
-                        </li>
-                        <li class="exth=li">
-                            <img class="exth-img" src="./fotos/room.webp" alt="room">
-                            <p class="exth-p">Living Room</p>
-                            <h2 class="exth-h2">How To Choose The Best Wall Art & Decor House?</h2>
-                            <p class="exth-p">November 23, 2021</p>
-                            <button class="exth-button" type="button"></button>
-                        </li>
-                        <li class="exth=li">
-                            <img class="exth-img" src="./fotos/kitchen.webp" alt="kitchen">
-                            <p class="exth-p">Minimalist Interior</p>
-                            <h2 class="exth-h2">Tips To Increase The Interior Value Of Your House</h2>
-                            <p class="exth-p">November 23, 2021</p>
-                            <button class="exth-button" type="button"></button>
-                        </li>
-                        <li class="exth=li">
-                            <img class="exth-img" src="./fotos/bestsol.webp" alt="bestsol">
-                            <p class="exth-p">Kitchen Design</p>
-                            <h2 class="exth-h2">Best Solution For Any Office & Business Interior</h2>
-                            <p class="exth-p">November 23, 2021</p>
-                            <button class="exth-button" type="button"></button>
-                        </li>
-                        <li class="exth=li">
-                            <img class="exth-img" src="./fotos/matroshka.webp" alt="matroshka">
-                            <p class="exth-p">Living Room</p>
-                            <h2 class="exth-h2">Get Solution For Building Construction Work</h2>
-                            <p class="exth-p">November 23, 2021</p>
-                            <button class="exth-button" type="button"></button>
-                        </li>
-                        <li class="exth=li">
-                            <img class="exth-img" src="./fotos/auain.png" alt="auain">
-                            <p class="exth-p">Minimalist Interior</p>
-                            <h2 class="exth-h2">Attain The Best Finish For The Kitchen Cabinets</h2>
-                            <p class="exth-p">November 23, 2021</p>
-                            <button class="exth-button" type="button"></button>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="section connect-section">
-                <div class="container connect-container">
-                    <h4 class="connect-h4">Wanna join the interno?</h4>
-                    <p class="connect-p">Contact Us & Get a Free Consultation</p>
-                    <button class="connect-button" type="button">Connect With us</button>
-                </div>
-            </section>
-            <footer class="footer">
-                <div class="container footer-container">
-                    <ul class="footer-ul">
-                        <li class="footer-li">
-                            <img class="footer-logo" src="./fotos/logo.png" alt="logo">
-                        </li>
-                        <li class="footer-li">
-                            <p class="footer-p">We are the leading architect and interior design firm in the world.</p>
-                        </li>
-                        <!-- 4фото  свдж -->
-                    </ul>
-                    <nav class="footer-nav">
-                        <ul class="footer-uli">
-                            <li class="footer-li">
-                                <h3 class="footer-h3">Pages</h3>
-                                <a class="footer-a" href="">Style Guide</a>
-                                <a class="footer-a" href="">Protected</a>
-                                <a class="footer-a" href="">Licenses</a>
-                                <a class="footer-a" href="">Changelog</a>
-                                <a class="footer-a" href="">404</a>
-                            </li>
-                            <li>
-                                <h3 class="footer-h3">Explore</h3>
-                                <a class="footer-a" href="">About Us</a>
-                                <a class="footer-a" href="">Recent Blog</a>
-                                <a class="footer-a" href="">Pricing Plan</a>
-                                <a class="footer-a" href="">Our Projects</a>
-                                <a class="footer-a" href="">Contact Us</a>
-                            </li>
-                            <li>
-                                <h3 class="footer-h3">Contact</h3>
-                                <p class="footer-p">53, East Birchwood Ave. Brooklyn, New York 11201, USA.</p>
-                                <a class="footer-a" href="mailto:contact@interno.com">contact@interno.com</a>
-                                <a class="footer-a" href="tel:(123) 456 - 7890">(123) 456 - 7890</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <ul class="footer-ulii">
-                        <li class="footer-lii">
-                            Copyright © Interno | Designed by
-                            Victorflow
-                            Templates - Powered by
-                            Webflow
-                        </li>
-                    </ul>
-
-
-                </div>
-            </footer>
+        </section>
+        <section class="section exth-section">
+            <div class="container exth-container">
+                <h5 class="exth-h5">Recent Blogs</h5>
+                <p class="exth-p">Get updates about our latest trends and techniques used in <br>interior design
+                    project works.</p>
+                <ul class="exth-ul">
+                    <li class="exth-li">
+                        <img class="exth-img" src="./fotos/sitaps.webp" alt="sitaps">
+                        <p class="exth-pa">Kitchen Design</p>
+                        <h2 class="exth-h2">Residential Interior Designer In New York, USA</h2>
+                        <div class="exth-div ">
+                            <p class="exth-paa">November 23, 2021</p>
+                            <button class="exth-button" type="button"><img src="./fotos/knopka.svg" alt=""></button>
+                        </div>
+                    </li>
+                    <li class="exth-li">
+                        <img class="exth-img" src="./fotos/room.webp" alt="room">
+                        <p class="exth-pa">Living Room</p>
+                        <h2 class="exth-h2">How To Choose The Best Wall Art & Decor House?</h2>
+                        <div class="exth-div">
+                            <p class="exth-paa">November 23, 2021</p>
+                            <button class="exth-button" type="button"><img src="./fotos/knopka.svg" alt=""></button>
+                        </div>
+                    </li>
+                    <li class="exth-li">
+                        <img class="exth-img" src="./fotos/kitchen.webp" alt="kitchen">
+                        <p class="exth-pa">Minimalist Interior</p>
+                        <h2 class="exth-h2">Tips To Increase The Interior Value Of Your House</h2>
+                        <div class="exth-div">
+                            <p class="exth-paa">November 23, 2021</p>
+                            <button class="exth-button" type="button"><img src="./fotos/knopka.svg" alt=""></button>
+                        </div>
+                    </li>
+                    <li class="exth-li">
+                        <img class="exth-img" src="./fotos/bestsol.webp" alt="bestsol">
+                        <p class="exth-pa">Kitchen Design</p>
+                        <h2 class="exth-h2">Best Solution For Any Office & Business Interior</h2>
+                        <div class="exth-div">
+                            <div class="exth-div">
+                                <p class="exth-paa">November 23, 2021</p>
+                                <button class="exth-button" type="button"><img src="./fotos/knopka.svg" alt=""></button>
+                            </div>
+                    </li>
+                    <li class="exth-li">
+                        <img class="exth-img" src="./fotos/matroshka.webp" alt="matroshka">
+                        <p class="exth-pa">Living Room</p>
+                        <h2 class="exth-h2">Get Solution For Building Construction Work</h2>
+                        <div class="exth-div">
+                            <p class="exth-paa">November 23, 2021</p>
+                            <button class="exth-button" type="button"><img src="./fotos/knopka.svg" alt=""></button>
+                        </div>
+                    </li>
+                    <li class="exth-li">
+                        <img class="exth-img" src="./fotos/auain.png" alt="auain">
+                        <p class="exth-pa">Minimalist Interior</p>
+                        <h2 class="exth-h2">Attain The Best Finish For The Kitchen Cabinets</h2>
+                        <div class="exth-div">
+                            <p class="exth-paa">November 23, 2021</p>
+                            <button class="exth-button" type="button"><img src="./fotos/knopka.svg" alt=""></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section connect-section">
+            <div class="container connect-container">
+                <h4 class="connect-h4">Wanna join the interno?</h4>
+                <p class="connect-p">Contact Us & Get a Free Consultation</p>
+                <button class="connect-button" type="button">Connect With us</button>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__brand">
+                <a class="footer__logo" href="#" aria-label="Interno home">
+
+                    <svg width="177" height="50" viewBox="0 0 177 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M44.88 39.0001V38.6001L45.68 38.2801C46.2133 38.0934 46.56 37.8401 46.72 37.5201C46.9067 37.2001 47 36.7734 47 36.2401V15.3601C47 14.8268 46.92 14.4001 46.76 14.0801C46.6 13.7601 46.24 13.5068 45.68 13.3201L44.88 13.0001V12.6001H55.16V13.0001L54.36 13.3201C53.8267 13.5068 53.4667 13.7601 53.28 14.0801C53.12 14.4001 53.04 14.8268 53.04 15.3601V36.2401C53.04 36.7734 53.12 37.2001 53.28 37.5201C53.4667 37.8134 53.8267 38.0668 54.36 38.2801L55.16 38.6001V39.0001H44.88ZM56.8313 39.0001V38.6001L57.3913 38.4401C58.3246 38.1734 58.7913 37.5201 58.7913 36.4801V23.9601C58.7913 23.3734 58.6979 22.9468 58.5113 22.6801C58.3246 22.3868 57.9646 22.1868 57.4313 22.0801L56.8313 21.9201V21.5201L63.6713 19.2001L64.0713 19.6001L64.3913 22.0001C65.3246 21.1734 66.3779 20.4934 67.5513 19.9601C68.7246 19.4268 69.8846 19.1601 71.0313 19.1601C72.7913 19.1601 74.1379 19.6401 75.0713 20.6001C76.0313 21.5601 76.5113 23.0268 76.5113 25.0001V36.5201C76.5113 37.5601 77.0179 38.2134 78.0313 38.4801L78.3913 38.6001V39.0001H68.9513V38.6001L69.4713 38.4401C70.4046 38.1468 70.8713 37.4934 70.8713 36.4801V23.7201C70.8713 22.0134 70.0179 21.1601 68.3113 21.1601C67.1379 21.1601 65.8579 21.7468 64.4713 22.9201V36.5201C64.4713 37.5601 64.9379 38.2134 65.8713 38.4801L66.2313 38.6001V39.0001H56.8313ZM87.3609 39.6001C85.6543 39.6001 84.3209 39.1734 83.3609 38.3201C82.4276 37.4668 81.9609 36.1068 81.9609 34.2401V20.5601H79.2009V20.1601L80.1609 20.0001C80.9876 19.8134 81.6943 19.5468 82.2809 19.2001C82.8943 18.8534 83.4943 18.3868 84.0809 17.8001L87.3609 14.1601H87.7609L87.6409 19.7601H92.1209V20.5601H87.6009V34.9601C87.6009 35.8934 87.8009 36.6001 88.2009 37.0801C88.6276 37.5601 89.1609 37.8001 89.8009 37.8001C90.3609 37.8001 90.8543 37.6668 91.2809 37.4001C91.7076 37.1068 92.1343 36.7201 92.5609 36.2401L92.9609 36.6401C92.4276 37.5468 91.6943 38.2668 90.7609 38.8001C89.8276 39.3334 88.6943 39.6001 87.3609 39.6001ZM104.137 19.1601C105.87 19.1601 107.35 19.5201 108.577 20.2401C109.804 20.9334 110.737 21.8934 111.377 23.1201C112.044 24.3201 112.377 25.6934 112.377 27.2401C112.377 27.5334 112.364 27.8401 112.337 28.1601C112.31 28.4534 112.257 28.7201 112.177 28.9601H100.257C100.284 31.8401 100.79 33.9201 101.777 35.2001C102.79 36.4534 104.284 37.0801 106.257 37.0801C107.59 37.0801 108.67 36.8668 109.497 36.4401C110.324 36.0134 111.097 35.3868 111.817 34.5601L112.217 34.9201C111.39 36.3868 110.284 37.5334 108.897 38.3601C107.537 39.1868 105.897 39.6001 103.977 39.6001C102.084 39.6001 100.404 39.2001 98.9369 38.4001C97.4702 37.5734 96.3235 36.4001 95.4969 34.8801C94.6702 33.3601 94.2569 31.5468 94.2569 29.4401C94.2569 27.2534 94.7369 25.4001 95.6969 23.8801C96.6569 22.3334 97.8835 21.1601 99.3769 20.3601C100.897 19.5601 102.484 19.1601 104.137 19.1601ZM104.017 19.9601C103.244 19.9601 102.577 20.2001 102.017 20.6801C101.484 21.1334 101.057 21.9601 100.737 23.1601C100.444 24.3334 100.284 26.0001 100.257 28.1601H107.097C107.364 25.2534 107.257 23.1601 106.777 21.8801C106.297 20.6001 105.377 19.9601 104.017 19.9601ZM114.37 39.0001V38.6001L114.97 38.4401C115.504 38.2801 115.864 38.0401 116.05 37.7201C116.264 37.4001 116.37 36.9868 116.37 36.4801V23.9601C116.37 23.3734 116.264 22.9468 116.05 22.6801C115.864 22.3868 115.504 22.1868 114.97 22.0801L114.37 21.9201V21.5201L121.25 19.2001L121.65 19.6001L122.01 23.0401V23.3601C122.384 22.6134 122.864 21.9334 123.45 21.3201C124.064 20.6801 124.73 20.1601 125.45 19.7601C126.197 19.3601 126.93 19.1601 127.65 19.1601C128.664 19.1601 129.437 19.4401 129.97 20.0001C130.504 20.5601 130.77 21.2668 130.77 22.1201C130.77 23.0268 130.504 23.7334 129.97 24.2401C129.464 24.7201 128.85 24.9601 128.13 24.9601C127.01 24.9601 126.024 24.4001 125.17 23.2801L125.09 23.2001C124.824 22.8268 124.517 22.6268 124.17 22.6001C123.824 22.5468 123.504 22.7068 123.21 23.0801C122.944 23.3201 122.717 23.6134 122.53 23.9601C122.37 24.2801 122.21 24.6534 122.05 25.0801V36.2401C122.05 37.3068 122.517 37.9734 123.45 38.2401L124.73 38.6001V39.0001H114.37ZM132.027 39.0001V38.6001L132.587 38.4401C133.52 38.1734 133.987 37.5201 133.987 36.4801V23.9601C133.987 23.3734 133.893 22.9468 133.707 22.6801C133.52 22.3868 133.16 22.1868 132.627 22.0801L132.027 21.9201V21.5201L138.867 19.2001L139.267 19.6001L139.587 22.0001C140.52 21.1734 141.573 20.4934 142.747 19.9601C143.92 19.4268 145.08 19.1601 146.227 19.1601C147.987 19.1601 149.333 19.6401 150.267 20.6001C151.227 21.5601 151.707 23.0268 151.707 25.0001V36.5201C151.707 37.5601 152.213 38.2134 153.227 38.4801L153.587 38.6001V39.0001H144.147V38.6001L144.667 38.4401C145.6 38.1468 146.067 37.4934 146.067 36.4801V23.7201C146.067 22.0134 145.213 21.1601 143.507 21.1601C142.333 21.1601 141.053 21.7468 139.667 22.9201V36.5201C139.667 37.5601 140.133 38.2134 141.067 38.4801L141.427 38.6001V39.0001H132.027ZM165.272 39.6001C163.245 39.6001 161.485 39.1868 159.992 38.3601C158.498 37.5068 157.338 36.3068 156.512 34.7601C155.712 33.2134 155.312 31.4001 155.312 29.3201C155.312 27.2401 155.738 25.4401 156.592 23.9201C157.472 22.4001 158.658 21.2268 160.152 20.4001C161.672 19.5734 163.378 19.1601 165.272 19.1601C167.165 19.1601 168.858 19.5734 170.352 20.4001C171.845 21.2001 173.018 22.3601 173.872 23.8801C174.752 25.4001 175.192 27.2134 175.192 29.3201C175.192 31.4268 174.778 33.2534 173.952 34.8001C173.152 36.3201 172.005 37.5068 170.512 38.3601C169.045 39.1868 167.298 39.6001 165.272 39.6001ZM165.272 38.8001C166.205 38.8001 166.952 38.5334 167.512 38.0001C168.072 37.4668 168.472 36.5201 168.712 35.1601C168.978 33.8001 169.112 31.8801 169.112 29.4001C169.112 26.8934 168.978 24.9601 168.712 23.6001C168.472 22.2401 168.072 21.2934 167.512 20.7601C166.952 20.2268 166.205 19.9601 165.272 19.9601C164.338 19.9601 163.578 20.2268 162.992 20.7601C162.432 21.2934 162.018 22.2401 161.752 23.6001C161.512 24.9601 161.392 26.8934 161.392 29.4001C161.392 31.8801 161.512 33.8001 161.752 35.1601C162.018 36.5201 162.432 37.4668 162.992 38.0001C163.578 38.5334 164.338 38.8001 165.272 38.8001Z"
+                            fill="#292F36" />
+                        <path
+                            d="M0 42.0003H13.4588V32.499C13.4588 30.4853 15.0898 28.8543 17.1035 28.8543C19.1172 28.8543 20.7482 30.4853 20.7482 32.499V42.0003H33.9975V8C15.2211 8 0 23.2211 0 42.0003Z"
+                            fill="#CDA274" />
+                    </svg>
+                </a>
+
+                <p class="footer-p">We are the leading architect and interior design firm in the world.</p>
+
+                <div class="footer__social" aria-hidden="true">
+                    <a class="social-link" href="https://www.facebook.com/?locale=tr_TR" aria-label="facebook">
+                        <svg width="10" height="19" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2_397)">
+                                <path
+                                    d="M9.18359 10.5469L9.67578 7.3125H6.54688V5.20313C6.54688 4.28907 6.96875 3.44532 8.375 3.44532H9.81641V0.667969C9.81641 0.667969 8.51562 0.421875 7.28516 0.421875C4.71875 0.421875 3.03125 2.00391 3.03125 4.81641V7.3125H0.148438V10.5469H3.03125V18.4219H6.54688V10.5469H9.18359Z"
+                                    fill="#292F36" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2_397">
+                                    <rect width="10" height="19" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a class="social-link" href="https://x.com/?lang=tr" aria-label="twitter">
+                        <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.1367 3.6211C16.8398 3.09376 17.4727 2.46093 17.9648 1.72265C17.332 2.0039 16.5938 2.21485 15.8555 2.28516C16.6289 1.82812 17.1914 1.12501 17.4727 0.246094C16.7695 0.667969 15.9609 0.984375 15.1523 1.16015C14.4492 0.421875 13.5 0 12.4453 0C10.4062 0 8.75391 1.65234 8.75391 3.69141C8.75391 3.97266 8.78906 4.25391 8.85938 4.53516C5.80078 4.35938 3.05859 2.88281 1.23047 0.667969C0.914062 1.19532 0.738281 1.82812 0.738281 2.53126C0.738281 3.79688 1.37109 4.92188 2.39062 5.58985C1.79297 5.55469 1.19531 5.41406 0.703125 5.13281V5.16796C0.703125 6.96093 1.96875 8.4375 3.65625 8.78906C3.375 8.85937 3.02344 8.92968 2.70703 8.92968C2.46094 8.92968 2.25 8.89454 2.00391 8.85938C2.46094 10.3359 3.83203 11.3906 5.44922 11.4258C4.18359 12.4101 2.60156 13.0078 0.878906 13.0078C0.5625 13.0078 0.28125 12.9726 0 12.9375C1.61719 13.9922 3.55078 14.5898 5.66016 14.5898C12.4453 14.5898 16.1367 9.00001 16.1367 4.11329C16.1367 3.93751 16.1367 3.79688 16.1367 3.6211Z"
+                                fill="#292F36" />
+                        </svg>
+                    </a>
+                    <a class="social-link" href="https://instant.pxcode.io/" aria-label="linkedin">
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2_401)">
+                                <path
+                                    d="M3.64062 16.1719V5.66016H0.371094V16.1719H3.64062ZM1.98828 4.25391C3.04297 4.25391 3.88672 3.375 3.88672 2.32032C3.88672 1.30079 3.04297 0.457031 1.98828 0.457031C0.96875 0.457031 0.125 1.30079 0.125 2.32032C0.125 3.375 0.96875 4.25391 1.98828 4.25391ZM15.8398 16.1719H15.875V10.4063C15.875 7.59375 15.2422 5.41407 11.9375 5.41407C10.3555 5.41407 9.30078 6.29297 8.84375 7.10157H8.80859V5.66016H5.67969V16.1719H8.94922V10.9688C8.94922 9.59766 9.19531 8.29688 10.8828 8.29688C12.5703 8.29688 12.6055 9.84375 12.6055 11.0743V16.1719H15.8398Z"
+                                    fill="#292F36" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2_401">
+                                    <rect width="16" height="17" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a class="social-link" href="https://www.instagram.com/" aria-label="instagram">
+                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2_403)">
+                                <path
+                                    d="M8.5 4.7793C6.125 4.7793 4.23242 6.70899 4.23242 9.04688C4.23242 11.4219 6.125 13.3145 8.5 13.3145C10.8379 13.3145 12.7676 11.4219 12.7676 9.04688C12.7676 6.70899 10.8379 4.7793 8.5 4.7793ZM8.5 11.8301C6.97852 11.8301 5.7168 10.6055 5.7168 9.04688C5.7168 7.52539 6.94141 6.30079 8.5 6.30079C10.0215 6.30079 11.2461 7.52539 11.2461 9.04688C11.2461 10.6055 10.0215 11.8301 8.5 11.8301ZM13.918 4.63086C13.918 4.07422 13.4727 3.62891 12.916 3.62891C12.3594 3.62891 11.9141 4.07422 11.9141 4.63086C11.9141 5.1875 12.3594 5.63282 12.916 5.63282C13.4727 5.63282 13.918 5.1875 13.918 4.63086ZM16.7383 5.63282C16.6641 4.29688 16.3672 3.10938 15.4023 2.14454C14.4375 1.17969 13.25 0.882813 11.9141 0.808594C10.541 0.734375 6.42188 0.734375 5.04883 0.808594C3.71289 0.882813 2.5625 1.17969 1.56055 2.14454C0.595703 3.10938 0.298828 4.29688 0.224609 5.63282C0.150391 7.00586 0.150391 11.125 0.224609 12.4981C0.298828 13.834 0.595703 14.9844 1.56055 15.9864C2.5625 16.9512 3.71289 17.2481 5.04883 17.3223C6.42188 17.3965 10.541 17.3965 11.9141 17.3223C13.25 17.2481 14.4375 16.9512 15.4023 15.9864C16.3672 14.9844 16.6641 13.834 16.7383 12.4981C16.8125 11.125 16.8125 7.00586 16.7383 5.63282ZM14.957 13.9454C14.6973 14.6875 14.1035 15.2442 13.3984 15.5411C12.2852 15.9864 9.6875 15.875 8.5 15.875C7.27539 15.875 4.67773 15.9864 3.60156 15.5411C2.85938 15.2442 2.30273 14.6875 2.00586 13.9454C1.56055 12.8692 1.67188 10.2715 1.67188 9.04688C1.67188 7.85938 1.56055 5.26172 2.00586 4.14844C2.30273 3.44336 2.85938 2.88672 3.60156 2.58985C4.67773 2.14454 7.27539 2.25586 8.5 2.25586C9.6875 2.25586 12.2852 2.14454 13.3984 2.58985C14.1035 2.84961 14.6602 3.44336 14.957 4.14844C15.4023 5.26172 15.291 7.85938 15.291 9.04688C15.291 10.2715 15.4023 12.8692 14.957 13.9454Z"
+                                    fill="#292F36" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2_403">
+                                    <rect width="17" height="18" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="footer__nav" aria-label="Footer navigation">
+                <section class="footer-col">
+                    <h3 class="footer-h3">Pages</h3>
+                    <ul class="footer-list">
+                        <li class="footer-li"><a class="footer-a" href="#">Style Guide</a></li>
+                        <li class="footer-li"><a class="footer-a" href="#">Protected</a></li>
+                        <li class="footer-li"><a class="footer-a" href="#">Licenses</a></li>
+                        <li class="footer-li"><a class="footer-a" href="#">Changelog</a></li>
+                        <li class="footer-li"><a class="footer-a" href="#">404</a></li>
+                    </ul>
+                </section>
+
+                <section class="footer-col">
+                    <h3 class="footer-h3">Explore</h3>
+                    <ul class="footer-list">
+                        <li class="footer-li"><a class="footer-a" href="#">About Us</a></li>
+                        <li class="footer-li"><a class="footer-a" href="#">Recent Blog</a></li>
+                        <li class="footer-li"><a class="footer-a" href="#">Pricing Plan</a></li>
+                        <li class="footer-li"><a class="footer-a" href="#">Our Projects</a></li>
+                        <li class="footer-li"><a class="footer-a" href="#">Contact Us</a></li>
+                    </ul>
+                </section>
+
+                <address class="footer-col footer-col--contact">
+                    <h3 class="footer-h3">Contact</h3>
+                    <p class="footer-p">53, East Birchwood Ave.<br>
+                        Brooklyn, New York 11201, USA.<br>
+                        <a class="footer-a" href="mailto:contact@interno.com">contact@interno.com</a><br>
+                        <a class="footer-a" href="tel:+11234567890">(123) 456 - 7890</a>
+                    </p>
+                </address>
+            </nav>
+        </div>
+
+        <div class="footer__bottom">
+            <p class="footer-bottom-text">Copyright © Interno | Designed by <span
+                    style="color: #CDA274;">Victorflow</span> Templates - Powered by
+                <span style="color: #CDA274;">Webflow</span>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
 
 
 </body>

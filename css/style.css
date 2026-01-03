@@ -3,15 +3,21 @@ body {
   font-family: "Jost", sans-serif;
   font-weight: 400;
   color: #292f36;
-  background-color: #ffffff;
+  background-color: #e7e7e7;
+}
+
+.section {
+  background-color: #e7e7e7;
+  display: flow-root; /* разрывает margin-collapse — основной фикс */
+  /* fallback для старых браузеров (можно оставить): */
+  overflow: auto;
 }
 
 .container {
-  width: 1440px;
-  height: 831px;
+  width: 1200px;
+  height: 675px;
   margin: 0 auto;
   padding: 0 0px;
-  border: 2px solid red;
 }
 
 .header {
@@ -20,14 +26,16 @@ body {
 }
 
 .header-container {
+  height: 62px;
+}
+
+.header-all {
+  width: 1200px;
+  height: 62px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
-  height: 62px;
-  margin-left: 120px;
-  margin-right: 120px;
-  margin-bottom: 18px;
+  /* margin-top: 20px; */
 }
 
 .header-logo {
@@ -36,8 +44,10 @@ body {
   font-weight: 400px;
   color: #292f36;
   text-decoration: none;
-
-  padding-bottom: 12px;
+  margin-bottom: 12px;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 18px;
 }
 
 .header-logo::before {
@@ -59,8 +69,8 @@ body {
   text-decoration: none;
   font-size: 18px;
   color: #292f36;
-  padding-bottom: 20px;
-  padding-top: 12px;
+  margin-bottom: 20px;
+  margin-top: 12px;
 }
 
 .header-nav a:hover {
@@ -70,6 +80,7 @@ body {
 .dream-container {
   background-image: url("../fotos/fon.png");
   height: 800px;
+  margin-bottom: 100px;
 }
 
 .dream-h1 {
@@ -114,83 +125,8 @@ body {
   font-weight: 106px;
 }
 
-/* .info-section {
- background-color: #ffffff;
-}
-
-.info-container {
-  width: 1200px;
-  height: 395px;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  padding-top: 25px; 
-}
-
-.info-ul {
-  display: flex;
-  border: 2px solid rgb(128, 0, 255);
-  display: flex;
-  
-  margin-top: 50px;
-}
-
-.info-box {
-  text-align: center;
-  border: 2px solid rgb(0, 255, 38);
-  width: 400px;
-  height: 395px;
-  margin-bottom: 81px;
-  
-}
-
-
-.info-ul li:not(:first-child) {
-  padding-right: 41px;
-}
-
-.info-ul li:not(:first-child) {
-  padding-left: 51px;
-}
-
-.info-h2 {
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 156%;
-  letter-spacing: 0.01em;
-  text-align: center;
-  color: #292f36;
-  padding-left: 113px;
-  padding-right: 51px;
-  padding-bottom: 17px;
-  padding-top: 75px;
-}
-
-.info-p {
-  font-family: "Jost", sans-serif;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 150%;
-  letter-spacing: 0.01em;
-  text-align: center;
-  color: #4d5053;
-  padding-right: 41px;
-  padding-left: 42px;
-  padding-bottom: 35px;
-}
-
-.info-a {
-  font-family: "Jost", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  letter-spacing: 0.02em;
-  color: #4d5053;
-} */
-
 .info-section {
-  background-color: #ffffff;
+  background-color: #e7e7e7;
 }
 
 .info-container {
@@ -285,10 +221,9 @@ body {
 }
 
 .call-container {
-  width: 1200px;
-  height: 634px;
   position: relative;
   margin-bottom: 139px;
+  height: 634px;
 }
 
 .call-h3 {
@@ -341,19 +276,20 @@ body {
 .tel-div {
   width: 532px;
   height: 143px;
-  border: 2px solid blueviolet;
   position: relative;
   margin-bottom: 10px;
 }
 
 .telefon {
   position: absolute;
+  margin-top: 10px;
+  margin-bottom: 39px;
 }
 
 .call-img {
   width: 592px;
   height: 635px;
-  margin-top: px;
+
   position: absolute;
   top: 0px;
   right: 0px;
@@ -380,8 +316,7 @@ body {
 .about-container {
   background-image: url("../fotos/aboutfon.png");
   background-repeat: no-repeat;
-  width: 1200px;
-  height: 675px;
+
   margin-bottom: 140px;
 }
 
@@ -395,11 +330,17 @@ body {
   color: #292f36;
 }
 
+.about-father {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 32px;
+}
+
 .about-img {
   border-radius: 100px;
   width: 77px;
   height: 77px;
-  padding-left: 36px;
 }
 
 .about-h2 {
@@ -409,9 +350,6 @@ body {
   line-height: 150%;
   letter-spacing: 0.01em;
   color: #292f36;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  /* padding-top: 52px; */
 }
 
 .about-p {
@@ -421,8 +359,6 @@ body {
   line-height: 150%;
   letter-spacing: 0.01em;
   color: #4d5053;
-  margin-bottom: 0px;
-  margin-top: 0px;
 }
 
 .about-pa {
@@ -433,17 +369,10 @@ body {
   letter-spacing: 0.01em;
   color: #4d5053;
   max-width: 300px;
-  padding-bottom: 45px;
-}
-
-.about-text {
-  width: 162px;
-  height: 64px;
 }
 
 .about-profile {
   width: 289px;
-  height: 77px;
 }
 
 .about-ul {
@@ -458,9 +387,8 @@ body {
 
 .about-li {
   background-color: #ffffff;
-
   width: 354px;
-  height: 287px;
+  padding: 49px 30px 45px 35px;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -469,11 +397,10 @@ body {
 }
 
 .gallary-container {
-  width: 1200px;
-  height: 103px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
+  height: 103px;
 }
 
 #home {
@@ -521,9 +448,8 @@ body {
 }
 
 .foto-container {
-  width: 1220px;
-  height: 1632px;
   margin-bottom: 79px;
+  height: 1865px;
 }
 
 .foto-h6 {
@@ -549,7 +475,7 @@ body {
   letter-spacing: 0.01em;
   text-align: center;
   color: #4d5053;
-  padding-bottom: 70px;
+  padding-bottom: 69px;
 }
 
 .foto-img {
@@ -561,6 +487,10 @@ body {
   margin-right: 20px;
 }
 
+#foto-bad {
+  margin-right: 20px;
+}
+
 .foto-h4 {
   font-family: "dm serif display", serif;
   font-weight: 400;
@@ -568,7 +498,6 @@ body {
   line-height: 156%;
   letter-spacing: 0.01em;
   color: #292f36;
-  padding-bottom: 32px;
 }
 
 .foto-pe {
@@ -581,10 +510,19 @@ body {
 }
 
 .foto-a {
-  background-color: #292f36;
-  border-radius: 100px;
+  display: inline-block;
+  background-color: #f4f0ec;
+  border-radius: 50px;
   width: 70px;
   height: 70px;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  text-decoration: none;
+  font-size: 48px;
+  line-height: 70px;
+  text-align: center;
+  color: #292f36;
 }
 
 .foto-ul {
@@ -597,4 +535,366 @@ body {
 .foto-ele {
   width: 590px;
   height: 95px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.years-container {
+  width: 1440px;
+  height: 475px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  width: 288px;
+  height: 195px;
+  margin-top: 139px;
+  margin-bottom: 140px;
+}
+
+.years-p {
+  font-family: "jost", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #4d5053;
+}
+
+.years-h5 {
+  font-family: "dm serif display", serif;
+  font-size: 85px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #cda274;
+}
+
+#years1 {
+  margin-bottom: 10px;
+  margin-left: 33px;
+  margin-right: 55px;
+}
+
+#years2 {
+  margin-bottom: 10px;
+  margin-left: 57px;
+  margin-right: 78px;
+}
+#years3 {
+  margin-bottom: 10px;
+  margin-left: 65px;
+  margin-right: 86px;
+}
+
+#years4 {
+  margin-bottom: 10px;
+  margin-left: 47px;
+  margin-right: 67px;
+}
+
+#one {
+  margin-left: 123px;
+}
+
+#last {
+  margin-right: 117px;
+}
+
+.exth-section {
+  background-color: #e7e7e7;
+}
+
+.exth-container {
+  height: 1343px;
+  margin-bottom: 92px;
+  margin-top: 138px;
+}
+
+.exth-h5 {
+  font-family: "dm serif display", serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 130%;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #292f36;
+}
+
+.exth-p {
+  font-family: "Jost", serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #4d5053;
+  margin-bottom: 70px;
+}
+
+.exth-ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 1220px;
+  height: 1110px;
+}
+
+.exth-li {
+  border: 2px solid white;
+  background: #e7e7e7;
+  border-radius: 30px;
+  position: relative;
+  width: 387px;
+  height: 515px;
+}
+
+.exth-img {
+  border-radius: 45px 45px 0 0;
+  width: 345px;
+  height: 296px;
+  margin: 21px 21px 0px 21px;
+  display: block;
+}
+
+.exth-pa {
+  font-family: "jost";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  position: absolute;
+  color: #4d5053;
+  top: 250px;
+  left: 24px;
+  background-color: #ffffff;
+  width: 125px;
+  border-radius: 15px 15px 15px 0px;
+  padding: 10px 10px 10px 10px;
+  margin: 0px 196px 29px 24px;
+}
+
+.exth-div {
+  width: 344px;
+  height: 62px;
+  display: flex;
+  gap: 149px;
+  margin-left: 21px;
+  margin-bottom: 40px;
+}
+
+.exth-button {
+  margin-top: 9px;
+  background-color: #f4f0ec;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  outline: none;
+}
+
+.exth-h2 {
+  font-family: "DM serif Display";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #292f36;
+  margin-left: 21px;
+
+  margin-bottom: 10px;
+}
+
+.exth-paa {
+  font-family: "jost" sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #4d5053;
+  margin-top: 23px;
+  margin-bottom: 14px;
+  max-width: 150px;
+}
+
+.connect-section {
+  position: relative;
+  z-index: 0;
+  padding-bottom: 0;
+}
+
+.connect-container {
+  max-width: 1200px;
+  margin: 0 auto 79px;
+  height: 414px;
+  background-image: url("../fotos/connect.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.connect-h4 {
+  font-family: "DM serif Display", serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.5;
+  color: #fff;
+  margin: 0 20px 9px;
+  text-align: center;
+}
+
+.connect-p {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #fff;
+  margin: 0 20px 24px;
+  text-align: center;
+  max-width: 820px;
+}
+
+.connect-button {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #cda274;
+  width: 241px;
+  height: 71px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  width: 100%;
+  background-color: #e7e7e7;
+  border-top: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.footer__container {
+  margin: 0 auto;
+  padding: 60px 5%;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer__brand {
+  flex: 1.6 1 260px;
+  min-width: 220px;
+}
+
+.footer__logo {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 18px;
+}
+.footer-p {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 18px 0;
+  max-width: 320px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+}
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-right: 30px;
+}
+.social-link svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 40px;
+  flex: 1 1 560px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.footer-col {
+  flex: 1 1 160px;
+  min-width: 160px;
+}
+.footer-col--contact {
+  min-width: 220px;
+}
+
+.footer-h3 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin: 0 0 18px 0;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-li {
+  margin: 10px 0;
+}
+.footer-a {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+
+  text-decoration: none;
+}
+.footer-a:hover {
+  text-decoration: underline;
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 18px 5%;
+  margin-top: 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.footer-bottom-text {
+  margin: 0;
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
 }
