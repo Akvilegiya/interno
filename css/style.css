@@ -15,7 +15,7 @@ body {
 
 .container {
   width: 1200px;
-  height: 675px;
+
   margin: 0 auto;
   padding: 0 0px;
 }
@@ -26,12 +26,10 @@ body {
 }
 
 .header-container {
-  height: 62px;
 }
 
 .header-all {
   width: 1200px;
-  height: 62px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,28 +76,25 @@ body {
 }
 
 .dream-section {
+  background-position: center;
+  background-size: cover;
   background-image: url("../fotos/fon.png");
-  height: 800px;
   background-repeat: no-repeat;
-  margin-left: 80px;
   border-radius: 0 0 0 290px;
-  width: 1440px;
-  height: 831px;
+  padding-top: 188px;
+  padding-bottom: 260px;
+  margin-bottom: 98px;
 }
 
 .dream-container {
-  margin-bottom: 100px;
 }
 
 .dream-h1 {
   font-family: "DM Serif Display", sans-serif;
   font-size: 80px;
   font-weight: 400;
-  margin: 0 0 12px;
   line-height: 1;
   letter-spacing: 0.22px;
-  padding-left: 120px;
-  padding-top: 188px;
 }
 
 .dream-p {
@@ -107,14 +102,11 @@ body {
   max-width: 420px;
   margin: 0 0 20px;
   opacity: 0.85;
-  padding-top: 19px;
-  padding-left: 120px;
 }
 
 .background-button {
   border-radius: 23px;
   display: inline-block;
-  margin-left: 120px;
 }
 
 .dream-button {
@@ -133,21 +125,23 @@ body {
   font-weight: 106px;
 }
 
-.info-section {
-  background-color: #e7e7e7;
-}
-
 #lisa {
   margin-right: 50px;
 }
 
-.info-container {
-  width: 1200px;
-  height: 395px;
+.info-section {
+  background-color: #e7e7e7;
+  padding-top: 75px;
+  padding-bottom: 70px;
+
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 81px;
+}
+
+.info-container {
+  width: 1200px;
 }
 
 .info-ul {
@@ -157,7 +151,6 @@ body {
 .info-box {
   text-align: center;
   width: 400px;
-  height: 395px;
 }
 
 .info-h2 {
@@ -230,12 +223,15 @@ body {
 
 .call-section {
   display: flex;
+  padding-top: 40px;
+  padding-bottom: 36px;
+  margin-bottom: 139px;
 }
 
 .call-container {
-  position: relative;
-  margin-bottom: 139px;
-  height: 634px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .call-h3 {
@@ -287,7 +283,6 @@ body {
 
 .tel-div {
   width: 532px;
-  height: 143px;
   position: relative;
   margin-bottom: 10px;
 }
@@ -300,11 +295,6 @@ body {
 
 .call-img {
   width: 592px;
-  height: 635px;
-
-  position: absolute;
-  top: 0px;
-  right: 0px;
 }
 
 .call-button {
@@ -325,11 +315,15 @@ body {
   margin-top: 10px;
 }
 
+.about-section {
+  margin-bottom: 140px;
+  padding-top: 103px;
+  padding-bottom: 120px;
+}
+
 .about-container {
   background-image: url("../fotos/aboutfon.png");
   background-repeat: no-repeat;
-
-  margin-bottom: 140px;
 }
 
 .about-h4 {
@@ -455,13 +449,11 @@ body {
 }
 
 .foto-section {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-top: 13px;
+  margin-bottom: 60px;
 }
 
 .foto-container {
-  margin-bottom: 79px;
-  height: 1865px;
 }
 
 .foto-h6 {
@@ -492,7 +484,6 @@ body {
 
 .foto-img {
   width: 590px;
-  height: 661px;
 }
 
 #foto-img {
@@ -551,9 +542,11 @@ body {
   position: relative;
 }
 
+.years-section {
+  background-image: url(../fotos/astral.png);
+}
+
 .years-container {
-  width: 1440px;
-  height: 475px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -625,12 +618,15 @@ body {
 
 .exth-section {
   background-color: #e7e7e7;
+  padding-top: 12px;
+  padding-bottom: 40px;
+  margin-bottom: 92px;
+  margin-top: 138px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .exth-container {
-  height: 1343px;
-  margin-bottom: 92px;
-  margin-top: 138px;
 }
 
 .exth-h5 {
@@ -662,7 +658,6 @@ body {
   padding: 0;
   margin: 0;
   width: 1220px;
-  height: 1110px;
 }
 
 .exth-li {
@@ -671,13 +666,11 @@ body {
   border-radius: 30px;
   position: relative;
   width: 387px;
-  height: 515px;
 }
 
 .exth-img {
   border-radius: 45px 45px 0 0;
   width: 345px;
-  height: 296px;
   margin: 21px 21px 0px 21px;
   display: block;
 }
@@ -713,7 +706,7 @@ body {
   background-color: #f4f0ec;
   border-radius: 100px;
   width: 52px;
-  height: 52px;
+
   border: none;
   background: transparent;
   padding: 0;
@@ -747,7 +740,8 @@ body {
 .connect-section {
   position: relative;
   z-index: 0;
-  padding-bottom: 0;
+  padding-top: 100px;
+  padding-bottom: 95px;
 }
 
 .connect-container {
@@ -820,7 +814,10 @@ body {
 
 .footer__brand {
   flex: 1.6 1 260px;
-  min-width: 220px;
+  width: 393px;
+  height: 374px;
+  margin-right: 16px;
+  margin-left: 120px;
 }
 
 .footer__logo {
@@ -872,9 +869,12 @@ body {
 
 .footer-h3 {
   font-family: "DM Serif Display", serif;
+
   font-weight: 400;
-  font-size: 22px;
-  margin: 0 0 18px 0;
+  font-size: 25px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #292f36;
 }
 
 .footer-list {
@@ -888,11 +888,12 @@ body {
 .footer-a {
   font-family: "Jost", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-
-  text-decoration: none;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #4d5053;
 }
+
 .footer-a:hover {
   text-decoration: underline;
 }
@@ -903,10 +904,18 @@ body {
   margin-top: 20px;
   background: #fff;
   text-align: center;
+  width: 1440px;
+  height: 33px;
 }
 
 .footer-bottom-text {
   margin: 0;
   font-size: 15px;
   font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #4d5053;
 }
