@@ -42,10 +42,6 @@ body {
   font-weight: 400px;
   color: #292f36;
   text-decoration: none;
-  margin-bottom: 12px;
-  margin-left: 120px;
-  margin-right: 120px;
-  margin-bottom: 18px;
 }
 
 .header-logo::before {
