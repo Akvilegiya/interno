@@ -1,0 +1,132 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+
+  background: radial-gradient(at 20% 30%, #cda274 0%, transparent 45%),
+    radial-gradient(at 80% 25%, #5f6d73 0%, transparent 40%),
+    radial-gradient(at 50% 80%, #292f36 0%, transparent 55%),
+    linear-gradient(120deg, #292f36, #1e2329);
+
+  background-size: 200% 200%;
+  animation: paintFlow 16s ease-in-out infinite;
+  overflow: hidden;
+}
+
+@keyframes paintFlow {
+  0% {
+    background-position: 0% 40%;
+  }
+  50% {
+    background-position: 100% 60%;
+  }
+  100% {
+    background-position: 0% 40%;
+  }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -80px;
+  background: radial-gradient(
+      circle at 30% 40%,
+      hsl(106, 100%, 47%),
+      transparent 60%
+    ),
+    radial-gradient(circle at 70% 60%, #0f0f0f, transparent 85%);
+  filter: blur(100px);
+  opacity: 0.45;
+  z-index: -1;
+}
+
+.header-logo {
+  position: relative;
+  margin-bottom: 32px;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-decoration: none;
+  padding-left: 38px;
+}
+
+.header-logo::before {
+  content: url(../fotos/logo.webp);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 26px;
+  height: 26px;
+  transform: translateY(-50%);
+  background: radial-gradient(circle at 30% 30%, #cda274, transparent 60%),
+    linear-gradient(135deg, #5f6d73, #292f36);
+  border-radius: 8px;
+  box-shadow: 0 0 25px rgba(205, 162, 116, 0.6);
+}
+
+.header-logo:hover {
+  color: #cda274;
+}
+
+h1 {
+  margin-bottom: 28px;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+div {
+  width: 320px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+}
+
+input {
+  height: 44px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+input:focus {
+  outline: 1px solid #cda274;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+div a {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #cda274;
+  text-decoration: none;
+  align-self: flex-end;
+}
+
+div a:hover {
+  text-decoration: underline;
+}

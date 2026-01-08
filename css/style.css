@@ -1,5 +1,8 @@
+* {
+  box-sizing: border-box; /* Универсальный сброс */
+}
+
 body {
-  margin: 0;
   font-family: "Jost", sans-serif;
   font-weight: 400;
   color: #292f36;
@@ -8,16 +11,12 @@ body {
 
 .section {
   background-color: #e7e7e7;
-  display: flow-root; /* разрывает margin-collapse — основной фикс */
-  /* fallback для старых браузеров (можно оставить): */
-  overflow: auto;
 }
 
 .container {
   width: 1200px;
-
-  margin: 0 auto;
-  padding: 0 0px;
+  margin: auto;
+  padding: 0px;
 }
 
 .header {
@@ -77,9 +76,8 @@ body {
   background-image: url("../fotos/fon.png");
   background-repeat: no-repeat;
   border-radius: 0 0 0 290px;
-  padding-top: 188px;
+  padding-top: 195px;
   padding-bottom: 260px;
-  margin-bottom: 98px;
 }
 
 .dream-container {
@@ -91,6 +89,7 @@ body {
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.22px;
+  margin-bottom: 19px;
 }
 
 .dream-p {
@@ -133,7 +132,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 81px;
 }
 
 .info-container {
@@ -200,7 +198,6 @@ body {
   padding-right: 52px;
   padding-left: 52px;
   padding-bottom: 15px;
-  max-width: 300px;
 }
 
 .info-a {
@@ -221,7 +218,6 @@ body {
   display: flex;
   padding-top: 40px;
   padding-bottom: 36px;
-  margin-bottom: 139px;
 }
 
 .call-container {
@@ -258,8 +254,7 @@ body {
   line-height: 150%;
   letter-spacing: 0.01em;
   color: #4d5053;
-  margin-left: 113px;
-  margin-top: 46px;
+  padding-top: 17px;
 }
 
 .call-call {
@@ -271,22 +266,20 @@ body {
   font-size: 22px;
   letter-spacing: 0.01em;
   color: #4d5053;
-  margin-left: 113px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 57px;
 }
 
 .tel-div {
+  display: flex;
+  margin-top: 29px;
   width: 532px;
-  position: relative;
-  margin-bottom: 10px;
+  padding-bottom: 39px;
+}
+
+.call-div {
+  margin-left: 20px;
 }
 
 .telefon {
-  position: absolute;
-  margin-top: 10px;
-  margin-bottom: 39px;
 }
 
 .call-img {
@@ -312,14 +305,15 @@ body {
 }
 
 .about-section {
-  margin-bottom: 140px;
-  padding-top: 103px;
   padding-bottom: 120px;
+  padding-top: 103px;
 }
 
 .about-container {
   background-image: url("../fotos/aboutfon.png");
   background-repeat: no-repeat;
+  padding-bottom: 120px;
+  padding-top: 103px;
 }
 
 .about-h4 {
@@ -398,55 +392,58 @@ body {
   justify-content: space-between;
 }
 
+.gallary-section {
+}
+
 .gallary-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 140px;
   margin-bottom: 100px;
-  height: 103px;
 }
 
 #home {
   width: 132px;
   height: 43px;
-  padding-top: 30px;
-  padding-left: 48px;
-  padding-right: 125px;
-  padding-bottom: 29px;
+  margin-top: 30px;
+  margin-left: 48px;
+  margin-right: 125px;
+  margin-bottom: 29px;
 }
 
 #stylesheet {
   width: 103px;
   height: 103px;
-  padding-right: 110px;
+  margin-right: 110px;
 }
 
 #brand {
   width: 164px;
   height: 43px;
-  padding-top: 30px;
-  padding-bottom: 29px;
-  padding-right: 89px;
+  margin-top: 30px;
+  margin-bottom: 29px;
+  margin-right: 89px;
 }
 
 #naturehome {
   width: 145px;
   height: 45px;
-  padding-top: 29px;
-  padding-bottom: 28px;
-  padding-right: 112px;
+  margin-top: 29px;
+  margin-bottom: 28px;
+  margin-right: 112px;
 }
 
 #clasicdesing {
   width: 117px;
   height: 48px;
-  padding-bottom: 27px;
-  padding-top: 27px;
-  padding-right: 35px;
+  margin-bottom: 27px;
+  margin-top: 27px;
+  margin-right: 35px;
 }
 
 .foto-section {
   padding-top: 13px;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .foto-container {
@@ -702,11 +699,8 @@ body {
   background-color: #f4f0ec;
   border-radius: 100px;
   width: 52px;
-
   border: none;
-  background: transparent;
-  padding: 0;
-  outline: none;
+  cursor: pointer;
 }
 
 .exth-h2 {
