@@ -142,6 +142,10 @@ body {
   display: flex;
 }
 
+.info-li {
+  padding-top: 75px;
+}
+
 .info-box {
   text-align: center;
   width: 400px;
@@ -155,24 +159,13 @@ body {
   letter-spacing: 0.01em;
   text-align: center;
   color: #292f36;
-  padding-left: 113px;
-  padding-right: 51px;
-  padding-bottom: 17px;
-  padding-top: 75px;
+  margin-bottom: 17px;
 }
 
 .info-f {
-  padding-left: 145px;
-  padding-right: 144px;
-  padding-bottom: 17px;
-  padding-top: 75px;
 }
 
 .info-fl {
-  padding-left: 151px;
-  padding-right: 151px;
-  padding-bottom: 17px;
-  padding-top: 75px;
 }
 
 .info-p {
@@ -183,21 +176,27 @@ body {
   letter-spacing: 0.01em;
   text-align: center;
   color: #4d5053;
-  padding-right: 41px;
-  padding-left: 42px;
-  padding-bottom: 48px;
+  margin-bottom: 15px;
+}
+
+.infoc {
+  padding-left: 52px;
+  padding-right: 51px;
+}
+
+.infoa {
+  padding-left: 52px;
+  padding-right: 52px;
+}
+
+.infop {
+  margin-bottom: 48px;
 }
 
 .info-en {
-  padding-right: 52px;
-  padding-left: 51px;
-  padding-bottom: 15px;
 }
 
 .info-th {
-  padding-right: 52px;
-  padding-left: 52px;
-  padding-bottom: 15px;
 }
 
 .info-a {
@@ -324,6 +323,7 @@ body {
   letter-spacing: 0em;
   text-align: center;
   color: #292f36;
+  margin-bottom: 45px;
 }
 
 .about-father {
@@ -890,12 +890,10 @@ body {
 
 .footer__bottom {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
-  padding: 18px 5%;
-  margin-top: 20px;
+  padding-top: 32px;
+  padding-bottom: 35px;
   background: #fff;
   text-align: center;
-  width: 1440px;
-  height: 33px;
 }
 
 .footer-bottom-text {
