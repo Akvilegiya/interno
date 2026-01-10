@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box; /* Универсальный сброс */
+  box-sizing: border-box;
 }
 
 body {
@@ -17,6 +17,7 @@ body {
   width: 1200px;
   margin: auto;
   padding: 0px;
+  
 }
 
 .header {
@@ -138,13 +139,12 @@ body {
 
 .info-ul {
   display: flex;
+  padding-top: 75px;
+  padding-bottom: 70px;
 }
 
 .info-li {
-  padding-top: 75px;
 }
-
-
 
 .info-box {
   text-align: center;
@@ -182,6 +182,10 @@ body {
 .infoc {
   padding-left: 52px;
   padding-right: 51px;
+}
+
+.infov {
+  padding-bottom: 70px;
 }
 
 .infoa {
@@ -271,7 +275,7 @@ body {
   margin-top: 29px;
   width: 532px;
   padding-bottom: 39px;
-  text-align: center;
+  align-items: center;
 }
 
 .call-div {
