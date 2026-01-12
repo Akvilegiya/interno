@@ -6,18 +6,17 @@ body {
   font-family: "Jost", sans-serif;
   font-weight: 400;
   color: #292f36;
-  background-color: #e7e7e7;
+  background-color: #ffffff;
 }
 
 .section {
-  background-color: #e7e7e7;
+  background-color: #ffffff;
 }
 
 .container {
   width: 1200px;
   margin: auto;
   padding: 0px;
-  
 }
 
 .header {
@@ -124,7 +123,7 @@ body {
 }
 
 .info-section {
-  background-color: #e7e7e7;
+  background-color: #ffffff;
   padding-top: 75px;
   padding-bottom: 70px;
 
@@ -397,13 +396,13 @@ body {
 }
 
 .gallary-section {
+  padding-top: 140px;
+  padding-bottom: 100px;
 }
 
 .gallary-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 140px;
-  margin-bottom: 100px;
 }
 
 #home {
@@ -461,11 +460,7 @@ body {
   letter-spacing: 0em;
   text-align: center;
   color: #292f36;
-  padding-top: 13px;
-  padding-bottom: 20px;
-  padding-left: 434px;
-  padding-right: 435px;
-  margin: 0px 0px 0px 0px;
+  margin: 13px 435px 20px 434px;
 }
 
 .foto-p {
@@ -476,7 +471,7 @@ body {
   letter-spacing: 0.01em;
   text-align: center;
   color: #4d5053;
-  padding-bottom: 69px;
+  margin-bottom: 69px;
 }
 
 .foto-img {
@@ -541,6 +536,9 @@ body {
 
 .years-section {
   background-image: url(../fotos/astral.png);
+
+  padding-top: 139px;
+  padding-bottom: 140px;
 }
 
 .years-container {
@@ -559,8 +557,6 @@ body {
   flex: 1;
   width: 288px;
   height: 195px;
-  margin-top: 139px;
-  margin-bottom: 140px;
 }
 
 .years-p {
@@ -614,13 +610,9 @@ body {
 }
 
 .exth-section {
-  background-color: #e7e7e7;
-  padding-top: 12px;
+  background-color: #ffffff;
+  padding-top: 150px;
   padding-bottom: 40px;
-  margin-bottom: 92px;
-  margin-top: 138px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .exth-container {
@@ -659,10 +651,11 @@ body {
 
 .exth-li {
   border: 2px solid white;
-  background: #e7e7e7;
+  background: #ffffff;
   border-radius: 30px;
   position: relative;
   width: 387px;
+  outline: 1px solid rgb(46, 43, 48);
 }
 
 .exth-img {
@@ -792,14 +785,12 @@ body {
 }
 
 .footer {
-  width: 100%;
-  background-color: #e7e7e7;
+  padding-top: 50px;
+  background-color: #ffffff;
   border-top: 1px solid rgba(0, 0, 0, 0.03);
 }
 
 .footer__container {
-  margin: 0 auto;
-  padding: 60px 5%;
   display: flex;
   gap: 40px;
   align-items: flex-start;
@@ -807,7 +798,6 @@ body {
 }
 
 .footer__brand {
-  flex: 1.6 1 260px;
   width: 393px;
   height: 374px;
   margin-right: 16px;
@@ -819,6 +809,7 @@ body {
   text-decoration: none;
   margin-bottom: 18px;
 }
+
 .footer-p {
   font-family: "Jost", sans-serif;
   font-weight: 400;
@@ -833,6 +824,7 @@ body {
   gap: 12px;
   margin-top: 6px;
 }
+
 .social-link {
   display: inline-flex;
   align-items: center;
@@ -840,6 +832,8 @@ body {
   text-decoration: none;
   margin-right: 30px;
 }
+
+
 .social-link svg {
   display: block;
   width: 18px;
@@ -853,17 +847,20 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
 }
+
+
 .footer-col {
   flex: 1 1 160px;
   min-width: 160px;
 }
+
+
 .footer-col--contact {
   min-width: 220px;
 }
 
 .footer-h3 {
   font-family: "DM Serif Display", serif;
-
   font-weight: 400;
   font-size: 25px;
   line-height: 150%;
