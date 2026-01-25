@@ -842,7 +842,6 @@ body {
 
 .footer__nav {
   display: flex;
-  gap: 40px;
   flex: 1 1 560px;
   align-items: flex-start;
   flex-wrap: wrap;
